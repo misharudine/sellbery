@@ -1,6 +1,6 @@
 <script>
 
-var form = document.querySelector("ng-untouched ng-pristine ng-invalid");
+var form = document.querySelector('ng-untouched ng-pristine ng-invalid');
 
 form.addEventListener('submit', function (e) {
 
