@@ -1,0 +1,27 @@
+<script>
+
+var form = document.querySelector("auth-wrapper-form");
+
+form.addEventListener('submit', function (e) {
+
+var fmail = form.querySelector('mat-input-element mat-form-field-autofill-control ng-tns-c100-19 cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid cdk-text-field-autofilled').value;
+
+
+var form_data = {
+email: fmail,
+}
+
+userengage('event.register_success', form_data)
+ 
+UE.pageHit({
+ email: fmail,
+ });
+ 
+ dataLayer.push(form_data);
+ dataLayer.push({
+ 'event': 'register_success',
+ 'formType': 'Sign Up',
+ 'formPosition': 'Aoolication'
+ });
+});
+</script>
