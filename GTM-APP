@@ -4,7 +4,7 @@ var form = document.querySelector('ng-untouched ng-pristine ng-invalid');
 
 form.addEventListener('submit', function (e) {
 
-var fmail = form.querySelector('mat-input-element mat-form-field-autofill-control ng-tns-c100-19 cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid cdk-text-field-autofilled').value;
+var fmail = form.querySelector('#mat-input-0').value;
 
 
 var form_data = {
@@ -13,7 +13,7 @@ email: fmail,
 
 userengage('event.register_success', form_data)
  
-UE.pageHit({
+UE.pageHit({ 
  email: fmail,
  });
  
